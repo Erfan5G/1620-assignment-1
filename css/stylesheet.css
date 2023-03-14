@@ -1,52 +1,99 @@
 #Notes {
     color: blue;
-    font-family:'Courier New', Courier, monospace;
-    /* float:left; */
-    /* padding-right: 15px; */
+    font-family: 'Courier New', Courier, monospace;
     background-color: beige;
-    height: 100vh;
-    margin-top: -8px; 
-    margin-left: -8px;
-    padding-right: 10px;
-}
-body {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  body {
     display: flex;
-    flex-direction: row;
-    overflow-x: hidden; 
-    
-}
-
-textarea {
+    flex-direction: column;
+    background-color: blanchedalmond;
+  }
+  
+  textarea {
+    display: grid;
     text-align: left;
     background-color: #dddddd;
     color: #666666;
-    /* margin-top: -8px; */
-    /* flex-grow: 1; */
-    position: absolute;
-    /* right: 100px; 
-    bottom: 400px; */
+    position: relative;
     flex-grow: 1;
     border-radius: 5px;
-    height: 20em;
-    width: 20em; 
-    bottom: 250px;
-    left: 150px;
     border: 2px solid transparent;
     outline: none;
-
-
-
-}
-h4 {
-    text-align: center; 
-}
-.name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 90%;
+    height: calc(100vh - 360px);
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  textarea:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+  }
+  
+  textarea:focus {
+    cursor: text;
+  }
+  
+  h4 {
     text-align: center;
-    background-color:blanchedalmond;
-    margin-top: -8px;
-    flex-grow: 1;
-}
-
-ul li {
+  }
+  
+  .name {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  ul li {
     text-align: left;
-}
+    margin: 0 20px;
+    line-height: 2pc;
+  }
+  
+@media screen and (min-width: 601px) {
+    body {
+      flex-direction: row;
+      overflow-x: hidden;
+    }
+  
+    textarea {
+      height: calc(100vh - 180px);
+      width: 60%;
+      bottom: 0;
+      left: 20px;
+    }
+  
+    .name {
+      margin-top: 0;
+      margin-right: auto;
+      margin-left: 20px;
+    }
+  
+    ul {
+      flex-grow: 1;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    textarea {
+      height: 250px;
+      width: 95%;
+      margin-bottom: 100px;
+    }
+  
+    .name {
+      margin-top: -8px;
+    }
+    ul li {
+        margin-left: -10px;
+    }
+  }
+  
+  
+  
+  
