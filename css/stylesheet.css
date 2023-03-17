@@ -42,6 +42,9 @@ body {
     margin: 0.5vw; 
     padding:1vw  
   }
+.NOTES {
+  margin-left: 10px;
+}
 .Dark-theme {
   background-color: rgb(86, 83, 106) ; 
   margin-right:1vw ; 
@@ -63,9 +66,10 @@ footer {
   bottom: 1vh; 
   left: 50vw;
 }
-footer img {
+.Footer-images {
   display: flex; 
-  gap: 1vw; 
+  flex-direction: row;
+  gap: 2vw; 
   background-color: rgb(250, 244, 236);
 }
   textarea {
@@ -100,6 +104,8 @@ footer img {
     display: grid; 
     grid-template-columns: 100vw; 
     grid-template-rows: 50vh 30vh 20vh; 
+    overflow: hidden;
+    overflow-x: hidden;
   }
   header {
     grid-row:  2/3; 
@@ -140,6 +146,26 @@ footer img {
       width: 100vw ; 
       align-items: center ; 
       }
-
+    header h2 {
+      text-align: center;
+    }
+    header {
+      margin-top: 30px;
+   }
+   #Take-Better-Notes {
+    margin-left: 25%; 
+    text-align: center;
+   }
+   .Docs {
+    margin-right: 25% ;
+    text-align: center;
+   }
+   .Dark-theme {
+    position: absolute;
+    right: 0px;
+    width: 14vw;
+    top: 115px;
+    height: 9vw
+   }
 }
 
