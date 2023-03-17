@@ -6,6 +6,8 @@ body {
     padding: 0%;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(37, 105, 147);
+    overflow: hidden; 
+    overflow-x: hidden;
   }
   
   header {
@@ -15,7 +17,7 @@ body {
   .Better-notes {
     display: flex; 
     flex-direction: column; 
-    width: 80vw; 
+    width: 79vw; 
     align-items: center;
   }
 
@@ -83,7 +85,7 @@ footer {
     font-size: 16px;
     line-height: 1.4;
     margin: 1vw;
-    width: 75vw; 
+    width: 78vw; 
     height: 20vh;
   }
 
@@ -96,6 +98,10 @@ footer {
   
   textarea:focus {
     cursor: text;
+  }
+
+  .Cancel {
+    background-color: brown;
   }
 
   
@@ -168,4 +174,3 @@ footer {
     height: 9vw
    }
 }
-
