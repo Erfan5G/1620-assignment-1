@@ -1,37 +1,86 @@
-#Notes {
-    color: blue;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: beige;
-    margin: 0;
-    padding: 10px;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    background-color: blanchedalmond;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-  }
-  
-  textarea {
+body {
     display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 100vh;
+    margin: 0%; 
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(37, 105, 147);
+  }
+  
+  header {
+    background-color: rgb(243, 233, 222);
+    margin: 0%; 
+  }
+  .Better-notes {
+    display: flex; 
+    flex-direction: column; 
+    width: 80vw; 
+    align-items: center;
+  }
+
+  .Docs {
+    display: flex; 
+    align-self: flex-end; 
+    margin: 3%;
+  }
+  section {
+    display: flex; 
+    gap: 0.6vw;
+  }
+  .New-Note.Dark-theme {
+    display: grid; 
+    grid-template-columns: 6vw 6vw ; 
+    column-gap: 65vw ;
+    margin: 1vw; 
+  }
+  button {
+    background-color: rgb(55, 95, 104);
+    color: white; 
+    border-radius: 5px; 
+    width: 7vw; 
+    margin: 0.5vw; 
+    padding:1vw  
+  }
+.Dark-theme {
+  background-color: rgb(86, 83, 106) ; 
+  margin-right:1vw ; 
+}
+
+.Under-Buttons {
+  width: 79vw; 
+  margin: 1vw; 
+  align-items: flex-end; 
+  justify-content: flex-end; 
+  margin-right: 2vw; 
+}
+main {
+  background-color: rgb(250, 244, 236);
+  margin:0%;
+}
+footer { 
+  position: absolute; 
+  bottom: 1vh; 
+  left: 50vw;
+}
+footer img {
+  display: flex; 
+  gap: 1vw; 
+  background-color: rgb(250, 244, 236);
+}
+  textarea {
     text-align: left;
     background-color: #dddddd;
     color: #666666;
-    position: relative;
-    flex-grow: 1;
     border-radius: 5px;
     border: 2px solid transparent;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.4;
-    width: 90%;
-    height: 100%; 
-    margin-bottom: 20px;
-    padding: 10px;
+    margin: 1vw;
+    width: 75vw; 
+    height: 20vh;
   }
 
   
@@ -44,109 +93,19 @@
   textarea:focus {
     cursor: text;
   }
-  
-  h4 {
-    text-align: center;
-  }
-  
-  .name {
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  ul li {
-    text-align: left;
-    margin: 0 20px;
-    line-height: 2pc;
-  }
-  
-@media screen and (min-width: 601px) {
-    body {
-      flex-direction: row;
-      overflow-x: hidden;
-    }
-  
-    textarea {
-      /* height: calc(100vh - 180px);
-      width: 60%; */
-      bottom: 0;
-      left: 20px;
-      height: 400px;
-      width: 1050px;
-      margin-top: 70px;
-    }
-  
-    .name {
-      margin-top: 0;
-      margin-right: auto;
-      margin-left: 20px;
-      text-align: center;
-    }
-  
-    ul {
-      flex-grow: 1;
-    }
-    ul li {    
-        margin-left: -10px;
-    }
-    /* .New-note {
-        position: absolute; 
-        margin-left: -515px;
-    /* } */
-    .New-note {
-        position: absolute;
-        height: 40px; 
-        width: 80px; 
-        border-radius: 5px;
-        margin-top: 60px;
-        margin-left: 185px;
-    }
-}
 
   
 @media screen and (max-width: 600px) {
-    textarea {
-      position: relative;
-      height: 250px;
-      width: 95%;
-      margin-bottom: 100px;
-    }
+  body {
+    display: grid; 
+    grid-template-columns: 100vw; 
+    grid-template-rows: 50vh 30vh 20vh; 
+  }
   
     .name {
       margin-top: -8px;
       margin-bottom: 10px;
       
-      
     }
-    ul li {
-        margin-left: -10px;
-    }
-    /* .New-note {
-        position: absolute; 
-        margin-top: 300px;
-        margin-left: -210px; */
-
-    .New-note {
-        width: 80px;
-        background-color: brown;
-        border-radius: 5px;
-        position: relative ;
-        margin-top: -410px;
-        margin-left: 5px;
-    }
-    .dark_theme {
-        position: sticky; 
-        width: 90px;
-        background-color: bisque;
-        border-radius: 5px; 
-        border-style:ridge ; 
-        border-color: #666666; 
-        margin-left: 19pc;
-        margin-top: 11pc;
-    }
-    
 }
 
-  
-  
-  
