@@ -26,7 +26,7 @@ body {
     align-self: flex-end; 
     margin: 3%;
   }
-  section {
+  div {
     display: flex; 
     gap: 0.6vw;
   }
@@ -81,16 +81,13 @@ footer {
     border-radius: 5px;
     border: 2px solid transparent;
     outline: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.4;
     margin: 1vw;
     width: 78vw; 
     height: 20vh;
   }
-
-  
-  
   textarea:hover {
     cursor: pointer;
     background-color: #eeeeee;
@@ -104,6 +101,12 @@ footer {
     background-color: brown;
   }
 
+  button:hover {
+    cursor: pointer;
+  }
+  ul li {
+    line-height: 4vh ; 
+  }
   
 @media screen and (max-width: 600px) {
   body {
