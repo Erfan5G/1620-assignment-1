@@ -5,7 +5,7 @@ body {
     margin: 0%; 
     padding: 0%;
     font-family: 'Montserrat', Courier, monospace;
-    color: rgb(37, 105, 147);
+    /* color: rgb(37, 105, 147); */
     overflow: hidden; 
     overflow-x: hidden;
   }
@@ -90,7 +90,7 @@ footer {
   }
   textarea:hover {
     cursor: pointer;
-    background-color: #eeeeee;
+    background-color: #dbd1d1;
   }
   
   textarea:focus {
@@ -107,7 +107,33 @@ footer {
   ul li {
     line-height: 4vh ; 
   }
+
+  .black-back {
+    background-color: #181818;
+  }
   
+  .white-text {
+    color: #00ff4c;
+  }
+  .gray-back {
+    background-color: #1f1f1f;
+  }
+  .birght-text {
+    color: #dabfa5;
+  }
+  ul li:hover { 
+    cursor: pointer;
+  }
+
+  .HIDE { 
+    display: none;
+  } 
+  .dark-back {
+    background-color: darkslategray;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+  }
 @media screen and (max-width: 600px) {
   body {
     display: grid; 
