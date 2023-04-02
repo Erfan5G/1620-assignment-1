@@ -87,6 +87,8 @@ footer {
     margin: 1vw;
     width: 78vw; 
     height: 20vh;
+    font-size: larger; 
+    font-weight: bold;
   }
   textarea:hover {
     cursor: pointer;
@@ -134,6 +136,10 @@ footer {
     font-size: large;
     font-weight: bold;
   }
+  .dark-back:hover {
+    background-color: #2b0616;
+  }
+
 @media screen and (max-width: 600px) {
   body {
     display: grid; 
@@ -181,6 +187,12 @@ footer {
       align-items: center ; 
       
       }
+    body { 
+      background-color: rgb(250, 244, 236);
+    }
+    .dark-back body { 
+      background-color: #2b0616;
+    }
     header h2 {
       text-align: center;
     }
@@ -202,5 +214,6 @@ footer {
     top: 115px;
     height: 9vw
    } */
+   
   }
 }
