@@ -162,10 +162,11 @@ let notesArray = [
     if (event.target.tagName === "LI") {
       // Find if the target is in the sidebar or not 
       const clickedTitle = event.target.textContent;
-      //About this line of code: takes a function as an argument, 
+
+      //About this line of code: It takes a function as an argument, 
       // which is an arrow function that checks if the title property of each object in the notesArray,
       //is equal to clickedTitle! 
-      
+
       const clickedNote = notesArray.find(note => note.title === clickedTitle);
   
       // Display clicked note in textarea
