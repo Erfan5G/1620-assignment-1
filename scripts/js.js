@@ -1,3 +1,5 @@
+//-------------------------------------| Dark them button(first way) |--------------------------------------------------------
+
 // const ThemeBtnref = document.querySelector('.Dark-theme')
 // function themechanger () { 
 //     ThemeBtnref.classList.toggle('active');
@@ -41,7 +43,7 @@
 // ThemeBtnref.addEventListener('click', themechanger)
 
 
-//==================----------------| easier version of the code theme toggling |----------------------===================
+//==================------------------| Dark them button(Second way)-easier |-------------------------===================
 const ThemeBtnref = document.querySelector('.Dark-theme');
 
 function toggleTheme() {
@@ -81,21 +83,21 @@ ThemeBtnref.addEventListener('click', toggleTheme);
 
 
 
-
-// Declare notesArray
+//=---------------------------------------| Notes Functions |-------------------------------------------------------------=
+// # Declare notesArray
 let notesArray = [
     { title: "Note one", body: "First Default Note " },
     { title: "Note two", body: "Second Defualt Note provided in the JS " }
   ];
   
-  // Get DOM elements
+  // Define and target the DOM 
   const cancelButton = document.querySelector(".Cancel");
   const newNoteButton = document.querySelector(".New-Note");
   const saveButton = document.querySelector(".Save");
   const textarea = document.querySelector("textarea");
   const sidebar = document.querySelector("ul");
   
-  // Hide textarea, save and cancel buttons
+  //Hiding Save-Cancel Buttons and Textarea "when page is loaded", using Hide class 
   cancelButton.classList.add("HIDE")
   saveButton.classList.add("HIDE")
   textarea.classList.add("HIDE")
@@ -114,7 +116,7 @@ let notesArray = [
     textarea.classList.remove("HIDE");
   }
   
-  // Event listener for "cancel" button
+  // Event listener for "Cancel" button
   cancelButton.addEventListener("click", hideElements);
   
   // Event listener for "new note" button
@@ -137,7 +139,6 @@ let notesArray = [
   
   // When clicking save button 
   saveButton.addEventListener("click", function() {
-    // Prompt pops and we save the (value) of it to put in the lists 
     const noteTitle = prompt("Please enter a title for your note:");
     //Check if the user response is Valid 
     if (noteTitle !== null && noteTitle.trim() !== "") {
@@ -159,8 +160,12 @@ let notesArray = [
     // Check if clicked element is a list item
     showElements()
     if (event.target.tagName === "LI") {
-      // Find corresponding note in notesArray
+      // Find if the target is in the sidebar or not 
       const clickedTitle = event.target.textContent;
+      //About this line of code: takes a function as an argument, 
+      // which is an arrow function that checks if the title property of each object in the notesArray,
+      //is equal to clickedTitle! 
+      
       const clickedNote = notesArray.find(note => note.title === clickedTitle);
   
       // Display clicked note in textarea
