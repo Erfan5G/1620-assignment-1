@@ -64,6 +64,7 @@ function applyDarkTheme() {
   document.querySelector('.Footer-Text').classList.add('birght-text');
   document.querySelector('.Footer-images').classList.add('gray-back');
   document.querySelector('textarea').classList.add('dark-back')
+  document.body.classList.add('gray-back')
 
   ThemeBtnref.textContent = 'Light';
 }
@@ -75,6 +76,7 @@ function applyLightTheme() {
   document.querySelector('main').classList.remove('gray-back', 'birght-text');
   document.querySelector('.Footer-Text').classList.remove('birght-text');
   document.querySelector('.Footer-images').classList.remove('gray-back');
+  document.body.classList.remove('gray-back')
 
   ThemeBtnref.textContent = 'Dark';
 }
